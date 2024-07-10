@@ -435,6 +435,76 @@ spring.h2.console.path=/h2
 		https://stackabuse.com/guide-to-spring-data-jpa/
 		
 		
+	Security
+
+			Authentication
+			Autherization
+		
+	
+Exception handling:
+===================
+
+
+1
+2		---->abnormal termination
+3
+4
+5
+6
+
+
+
+1000
+
+
+	try,catch,finally,throw,throws
+
+
+
+Spring rest exception handling 
+
+		controller level--->inside the controller @ExceptionHandler
+		application level
+		
+Spring Security:
+=================
+			JWT--->
+		
+		
+		
+		
+Microservices:
+===============
+		it says decompose/devide/split your large project into smaller services and 
+		later communicate them
+		
+		
+monolithic
+
+
+		can independetly scalable?
+		can independetly deployable?
+		can independetly developed?
+		
+
+
+		authenticate
+		cart
+		products
+		order
+		client
+
+
+
+		microservices communication
+				1)synchronous		RESTTEMPLATE,Fiegn,WebClient	
+				2)asynchronous		KAFKA,activemq,rabbitmq....
+
+
+
+		
+		
+		
 		
 		
 		
