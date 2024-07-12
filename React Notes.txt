@@ -196,7 +196,6 @@ npm install --save bootstrap
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
-https://docs.google.com/spreadsheets/d/1-5DfnQ9pJGsCA-nuo97QyN481wKwWmwTMlmQ2yiWFtI/edit?usp=sharing
 
 
 
@@ -207,14 +206,97 @@ https://docs.google.com/spreadsheets/d/1-5DfnQ9pJGsCA-nuo97QyN481wKwWmwTMlmQ2yiW
 			
 			class 			props,state(muttable)
 	
-Hooks	(16.3)
+Hooks	(16.8)
 
 		react/js function
 
 
+Vscode-->extensions-->download this...
+
+ES7+ React/Redux/React-Native snippets
+
+Few Shortcuts:
+===============
+rcc-->for class component
+rce-->class component with default export
+rfc-->for funational component
+rfce-->functional component with default export
+rafc-->for arrow functional component
+rcons-->to create constructor with default state
+rpce-->to create pure class components
+
+PureComponents:
+==============
+
+			class Test extends React.Component
 
 
+REFs
+
+AXIOS
+
+useEffect(callback,[])
+	useEffect is a tool that lets us interact with the outside world but not affect 
+	the rendering or performance of the component that it's in.
+
+			useState()--->react
+
+  Execute the following command to install JSON server
+npm install -g json-server
+
+Execute the following command to start the server
+json-server --watch filename.json
+
+json-server --watch data.json --port 8000
+			
+
+There are plenty of libraries available to make HTTP calls into React app.
+
+Axios			--->get,post,put,delete
+Fetch
+Superagent
+React-axios
+Use-HTTP
+React-request			
+			
+npm install axios
 
 
+Routing:
+========
+	multipage 
 
+	npm install react-router-dom
+
+Forms:
+========
+
+
+	2 types
+	
+		controlled forms  -->state 
+		
+		un-constrolled forms-->createRef,useRef
+
+	<form>
+	
+	<input type=""
+
+
+state
+
+	
+
+
+		X	username
+
+	A	  B
+
+	app state
+
+
+https://survey.zohopublic.com/zs/Zm0ANb    spring boot
+
+
+https://survey.zohopublic.com/zs/Sp0L5y     react
 
