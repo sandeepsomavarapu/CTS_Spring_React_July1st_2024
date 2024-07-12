@@ -502,6 +502,103 @@ monolithic
 
 
 
+	microservices problems
+
+
+1)configuration
+
+
+
+	centralized location
+		-->cloud config
+				spring cloud config server ---->github
+
+							project--->configserver
+
+
+	1) github
+		repository
+			.properties
+					COPY COMMON PROPERTIES
+
+	2)new project(configserver)
+			2.1) @EnableConfigServer(along with @SpringBootApplication)
+			2.2) .properties-->copy git url paste here 
+				port :888
+Example		 spring.cloud.config.server.git.uri:https://github.com/sandeepsomavarapu/config-server-repo.git	
+	
+	3)in all micro(config client)open pom.xml add below dependency
+		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+	
+
+
+		RestTemplate
+		WebClient
+			SpringReactiveWeb
+		
+		
+		OpenFiegn
+			springcloud routing--fiegn
+	
+		cloud config--->configserver
+		
+		service registry/discovery
+		   
+		netflix Eureka server
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>
+		@EnableEurekaServer
+			
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		
+		@EnableDiscoveryClient
+		
+	Circuit breaker pattern:
+	========================
+			hystrix
+			resilience4j
+			
+	client	--->	micro1    micro2---> micro3
+		
+		
+			fallbackmethod
+		
+	Distributed Tracing:
+=========================
+
+
+client	--->	micro1---->micro2---> micro3--->micro4
+
+
+		zipkin
+		
+		slueth(span id ,id)
+
+
+
+DockerFile
+
+	docker build
+
+
+
+
+
+	
+https://medium.com/cloud-native-daily/elk-spring-boot-a-guide-to-local-configuration-b6d9fa7790f6
+		
+		
+		
+		
 		
 		
 		
